@@ -1,7 +1,6 @@
 from os import sep
 from time import sleep
 import streamlit as st
-import seaborn as sns
 import pandas as pd
 import altair as alt
 import joblib
@@ -251,7 +250,7 @@ elif feature_selection == 'Approval Probability Prediction Model':
     if st.button("Submit"):
     
     # Unpickle classifier
-        st.text("Calculating probability.")
+        # st.text("Calculating probability.")
     # Store inputs into dataframe
         if 'EMPLOYER_NAME_'+employer_selection in test.columns:
             test['EMPLOYER_NAME_'+employer_selection] = 1
@@ -274,5 +273,5 @@ elif feature_selection == 'Approval Probability Prediction Model':
         probability = rf.predict_proba(test)[0][1]
     
     # Output prediction
-        st.subheader('The probability of certified is ' + str(round(probability,3)*100)+'%.')
+        st.subheader('The probability of certification is ' + str(round(probability,3)*100)+'%.')
     
