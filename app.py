@@ -52,9 +52,9 @@ employer_data = pd.merge(employer_data, state_code, how='right', \
                              left_on=['State'], right_on=['Abbr'])
 employer_data = employer_data.drop(['State_x', 'Abbr'], axis=1)
 
+# Chart 4: World
 world = alt.topo_feature(data.world_110m.url, "countries")
 
-# Chart 4: World
 country_code['name'] = country_code['name'].str.upper()
     
 application = pd.merge(application, country_code, how='left',
@@ -104,7 +104,7 @@ categorized_by = st.sidebar.radio(
 
 if feature_selection == 'Data Visualization Dashboard':
     
-    # ===== Chart 1 US States Map=====
+    # ===== Chart 1 US States Map =====
     st.subheader("🔍 Let's find out where the employers offering H-1B sponsorship are")
     st.text("Count of distinct employers who offer H-1B sponsorship in each state.")
 
@@ -156,7 +156,7 @@ if feature_selection == 'Data Visualization Dashboard':
         
     st.write(job_chart)
 
-    # ===== Chart 3 Wage Boxplots=====
+    # ===== Chart 3 Wage Boxplots =====
     st.subheader('💰 How much H-1B applicants earn in the state you work')
     
     wage_data = application[application['WORKSITE_STATE']==state_selection] \
