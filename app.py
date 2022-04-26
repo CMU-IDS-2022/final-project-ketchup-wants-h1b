@@ -68,9 +68,9 @@ applicant_data = application[['CASE_NUMBER', 'COUNTRY_OF_CITIZENSHIP', 'country-
     
 
 # Side Bar
-st.sidebar.header('H-1B Data Application')
+# st.sidebar.header('H-1B Data Application')
 feature_selection = st.sidebar.selectbox(
-    #'H-1B Data Application',
+    'H-1B Data Application',
     ('Home', 'Data Visualization Dashboard', 'Approval Probability Prediction Model')
 )
 
@@ -86,6 +86,7 @@ if feature_selection == 'Home':
     st.caption("This application is developed by Erin Lin and Kylie Hsieh for the [Interactive Data Science](https://dig.cmu.edu/ids2022) course at [Carnegie Mellon University](https://www.cmu.edu).")
 
 # ===================================== PART 1: Visualization =====================================
+
 # Visualization Dashboard
 
 elif feature_selection == 'Data Visualization Dashboard':
@@ -225,6 +226,7 @@ elif feature_selection == 'Data Visualization Dashboard':
 # ===================================== PART 2: Prediction Model =====================================
 
 # Prediction Model
+
 elif feature_selection == 'Approval Probability Prediction Model':
 
     st.subheader("Enter your information ⌨️")
