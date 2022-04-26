@@ -6,6 +6,7 @@ import altair as alt
 import joblib
 import numpy as np
 from vega_datasets import data
+from PIL import Image
 
 
 st.set_page_config(
@@ -66,45 +67,52 @@ application['country-code'] = application['country-code'].astype('Int64')
 applicant_data = application[['CASE_NUMBER', 'COUNTRY_OF_CITIZENSHIP', 'country-code', 'JOB_TITLE']]
     
 
-
-# ===================================== PART 1: Visualization =====================================
-
 # Side Bar
 st.sidebar.header('Feature Selection')
-feature_selection = st.sidebar.radio(
+feature_selection = st.sidebar.selectbox(
     'H-1B Data Application',
-    ('Data Visualization Dashboard', 'Approval Probability Prediction Model')
+    ('Home', 'Data Visualization Dashboard', 'Approval Probability Prediction Model')
 )
 
-major_list = application.FOREIGN_WORKER_INFO_MAJOR.value_counts() \
-    [application.FOREIGN_WORKER_INFO_MAJOR.value_counts()>50].index
-major_selection = st.sidebar.selectbox(
-    'Select or Type in Your Interested Major',
-    major_list,
-)
+if feature_selection == 'Home':
+    image = Image.open('visa.png')
+    st.image(image, caption='Photo by BusinessBecause')
+    st.markdown("The H-1B visa allows employers in the United States to temporarily employ foreign workers in occupations \
+        that require the theoretical and practical application of a body of highly specialized knowledge and a bachelor's \
+            degree or higher in the specific specialty or its equivalent.")
+    st.markdown("We, as international students, will need to obtain an H-1B visa to work in the United States. \
+        However, there are only a limited number of visas available each year. It is beneficial for international students \
+            to have a one-stop platform to understand the visa application status quo of their interested employers.")
+    st.caption("This application is developed by Erin Lin and Kylie Hsieh for the [Interactive Data Science](https://dig.cmu.edu/ids2022) course at [Carnegie Mellon University](https://www.cmu.edu).")
 
-state_list = sorted(application.WORKSITE_STATE.unique())
-state_selection = st.sidebar.selectbox(
-    'Select or Type in Your Interested Worksite State',
-    state_list
-)
-
-job_list = application.JOB_TITLE.value_counts() \
-    [application.JOB_TITLE.value_counts()>50].index
-job_selection = st.sidebar.selectbox(
-    'Select or Type in Your Interested Job Title',
-    job_list
-)
-
-categorized_by = st.sidebar.radio(
-    'What feature do you want the chart to be categorized by?',
-    ['CASE_STATUS', 'RECEIVED_YEAR', 'DECISION_YEAR']
-)
-
+# ===================================== PART 1: Visualization =====================================
 # Visualization Dashboard
 
-if feature_selection == 'Data Visualization Dashboard':
-    
+elif feature_selection == 'Data Visualization Dashboard':
+    major_list = application.FOREIGN_WORKER_INFO_MAJOR.value_counts() \
+        [application.FOREIGN_WORKER_INFO_MAJOR.value_counts()>50].index
+    major_selection = st.sidebar.selectbox(
+        'Select or Type in Your Interested Major',
+        major_list,
+    )
+
+    state_list = sorted(application.WORKSITE_STATE.unique())
+    state_selection = st.sidebar.selectbox(
+        'Select or Type in Your Interested Worksite State',
+        state_list
+    )
+
+    job_list = application.JOB_TITLE.value_counts() \
+        [application.JOB_TITLE.value_counts()>50].index
+    job_selection = st.sidebar.selectbox(
+        'Select or Type in Your Interested Job Title',
+        job_list
+    )
+
+    categorized_by = st.sidebar.radio(
+        'What feature do you want the chart to be categorized by?',
+        ['CASE_STATUS', 'RECEIVED_YEAR', 'DECISION_YEAR']
+    )   
     # ===== Chart 1 US States Map =====
     st.subheader("🔍 Let's find out where the employers offering H-1B sponsorship are")
     st.text("Count of distinct employers who offer H-1B sponsorship in each state.")
