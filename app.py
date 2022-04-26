@@ -27,7 +27,6 @@ def load_data(url, encode = 'utf-8'):
     return pd.read_csv(url, encoding = encode, index_col=0)
 
 url_application = 'https://raw.githubusercontent.com/CMU-IDS-2022/final-project-ketchup-wants-h1b/main/Data/h1b_application.csv'
-#url_application = 'https://raw.githubusercontent.com/CMU-IDS-2022/final-project-ketchup-wants-h1b/main/Data/h1b_application_data.csv'
 url_employer = 'https://raw.githubusercontent.com/CMU-IDS-2022/final-project-ketchup-wants-h1b/main/Data/h1b_employers.csv'
 url_column_name = 'https://raw.githubusercontent.com/CMU-IDS-2022/final-project-ketchup-wants-h1b/main/Data/data_columns.csv'
 url_ml = 'https://raw.githubusercontent.com/CMU-IDS-2022/final-project-ketchup-wants-h1b/main/Data/data_ml.csv'
@@ -40,7 +39,7 @@ test = load_data(url_column_name)
 ml_data = load_data(url_ml)
 state_code = load_data(url_state).reset_index()
 country_code = load_data(url_country).reset_index()
-rf = joblib.load("rf.pkl")
+rf = joblib.load("rf_1.pkl")
 
 # Geo Data Processing for Maps
 
