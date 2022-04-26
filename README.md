@@ -16,7 +16,7 @@ Check out the Streamlit [getting started](https://docs.streamlit.io/en/stable/ge
 
 To run the application locally, install the dependencies with pip install `-r requirements.txt` (or another preferred method to install the dependencies listed in requirements.txt). Then run streamlit run `app.py`.
 
-## Paper and video demo
+## Paper and Video Demo
 
 The paper can be found [here](https://ieeexplore.ieee.org/document/8933628). The video demo can be accessed [here](https://drive.google.com/file/d/1AWdrKle0DkpRKbu641FDhGY5UvDmiWBQ/view?usp=sharing) (available only to people within Carnegie Mellon University).
 
