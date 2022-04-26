@@ -82,7 +82,7 @@ major_selection = st.sidebar.selectbox(
     major_list,
 )
 
-state_list = application.WORKSITE_STATE.unique()
+state_list = sorted(application.WORKSITE_STATE.unique())
 state_selection = st.sidebar.selectbox(
     'Select or Type in Your Interested Worksite State',
     state_list
