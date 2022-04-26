@@ -6,6 +6,8 @@
   * Kylie Hsieh (hanjuh@andrew.cmu.edu)
 * **Online URL**: https://share.streamlit.io/cmu-ids-2022/final-project-ketchup-wants-h1b/main/app.py
 
+![A screenshot of the application.](app_summary_image.png)
+
 ## Abstract
 
 The H-1B visa allows employers in the United States to temporarily employ foreign workers in occupations that require the theoretical and practical application of a body of highly specialized knowledge and a bachelor's degree or higher in the specific specialty or its equivalent. We, as international students, will need to obtain an H-1B visa to work in the United States. However, there are only a limited number of visas available each year. It is beneficial for international students to have a one-stop platform to understand the visa application status quo of their interested employers.
