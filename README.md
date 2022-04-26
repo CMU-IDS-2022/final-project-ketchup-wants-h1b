@@ -18,7 +18,7 @@ To run the application locally, install the dependencies with pip install `-r re
 
 ## Paper and video demo
 
-The paper can be found [here](https://ieeexplore.ieee.org/document/8933628). The video demo can be accessed [here](https://drive.google.com/file/d/1AWdrKle0DkpRKbu641FDhGY5UvDmiWBQ/view?usp=sharing)(available only to people within Carnegie Mellon University)
+The paper can be found [here](https://ieeexplore.ieee.org/document/8933628). The video demo can be accessed [here](https://drive.google.com/file/d/1AWdrKle0DkpRKbu641FDhGY5UvDmiWBQ/view?usp=sharing) (available only to people within Carnegie Mellon University).
 
 ## Work distribution
 
