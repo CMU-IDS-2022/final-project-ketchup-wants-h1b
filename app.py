@@ -167,7 +167,7 @@ if feature_selection == 'Data Visualization Dashboard':
         extent='min-max',
         size=45
     ).encode(
-        x = alt.X('WAGE_OFFER_FROM:Q', title='Wage'),
+        x = alt.X('WAGE_OFFER_FROM:Q', title='Wage', scale=alt.Scale(domain=[0, 500000])),
         y = alt.Y('WORKSITE_STATE:N', title="")
     ).properties(
         width=800,
