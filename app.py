@@ -68,9 +68,9 @@ applicant_data = application[['CASE_NUMBER', 'COUNTRY_OF_CITIZENSHIP', 'country-
     
 
 # Side Bar
-# st.sidebar.header('Feature Selection')
+st.sidebar.header('H-1B Data Application')
 feature_selection = st.sidebar.selectbox(
-    'H-1B Data Application',
+    #'H-1B Data Application',
     ('Home', 'Data Visualization Dashboard', 'Approval Probability Prediction Model')
 )
 
