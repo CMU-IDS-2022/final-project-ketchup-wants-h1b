@@ -281,7 +281,12 @@ elif feature_selection == 'Approval Probability Prediction Model':
         test = test.reshape(1, -1)   
         prediction = rf.predict(test)
         probability = rf.predict_proba(test)[0][1]
+        if prediction == 1:
+          result = 'certified'
+         else:
+          result = 'denied'
     
     # Output prediction
+        st.subheader("There is a high chance that your H-1B application will be " + result)
         st.subheader('The probability of certification is ' + str(round(probability,3)*100)+'%.')
     
