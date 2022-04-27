@@ -34,7 +34,7 @@ For the final project, Kylie led the development of code for the web application
 
 ### Proposal
 
-- [X] The URL at the top of this readme needs to point to your application online. It should also list the names of the team members.
+- [x] The URL at the top of this readme needs to point to your application online. It should also list the names of the team members.
 - [x] A completed [proposal](Proposal.md). Each student should submit the URL that points to this file in their github repo on Canvas.
 
 ### Sketches
@@ -43,7 +43,7 @@ For the final project, Kylie led the development of code for the web application
 
 ### Final deliverables
 
-- [ ] All code for the project should be in the repo.
-- [X] Update the **Online URL** above to point to your deployed project.
+- [x] All code for the project should be in the repo.
+- [x] Update the **Online URL** above to point to your deployed project.
 - [ ] A detailed [project report](Report.md).  Each student should submit the URL that points to this file in their github repo on Canvas.
-- [X] A 5 minute video demonstration.  Upload the video to this github repo and link to it from your report.
+- [x] A 5 minute video demonstration.  Upload the video to this github repo and link to it from your report.
