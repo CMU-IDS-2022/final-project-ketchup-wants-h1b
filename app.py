@@ -283,7 +283,7 @@ elif feature_selection == 'Approval Probability Prediction Model':
         probability = rf.predict_proba(test)[0][1]
         if prediction == 1:
           result = 'certified'
-         else:
+        else:
           result = 'denied'
     
     # Output prediction
