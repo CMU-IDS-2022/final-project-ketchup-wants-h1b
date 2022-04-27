@@ -10,7 +10,7 @@
 
 ## Abstract
 
-The H-1B visa allows employers in the United States to temporarily employ foreign workers in occupations that require the theoretical and practical application of a body of highly specialized knowledge and a bachelor's degree or higher in the specific specialty or its equivalent. We, as international students, will need to obtain an H-1B visa to work in the United States. However, there are only a limited number of visas available each year. It is beneficial for international students to have a one-stop platform to understand the visa application status quo of their interested employers.
+The H-1B visa allows employers in the United States to temporarily employ foreign workers in occupations that require the theoretical and practical application of a body of highly specialized knowledge and a bachelor's degree or higher in the specific specialty or its equivalent. We, as international students, will need to obtain an H-1B visa to work in the United States. However, there are only a limited number of visas available each year. Our website aims to provide a one-stop platform for H-1B applicants to understand the visa application status quo of their interested employers.
 
 ## Running Instructions
 
@@ -24,7 +24,11 @@ The paper can be found [here](https://ieeexplore.ieee.org/document/8933628). The
 
 ## Work distribution
 
-Update towards the end of the project.
+In developing the topic of the project, Erin and Kylie brainstormed ideas together. They spent a couple of hours searching for relevant data sources that are public available, discussing possible visualizations, and collaborating in writing the project proposal.
+
+In the [proposal](Proposal.md), they presented two data sources, including H-1B employers and H-1B applicants data. They also Kylie led the data cleaning and preprocessing, converting the data structure into the feasible format for later visualizations. Erin took parts in literature reivew on the topic of machine learning models for H-1B approvals prediction.
+
+For the final project, Kylie led the development of code for the web application, as well as prediction model design and implementation. Erin led the develoment of the H-1B data visualization dashboard. Both of them fixed small bugs that they saw in the application in a timely manner. 
 
 ## Deliverables
 
