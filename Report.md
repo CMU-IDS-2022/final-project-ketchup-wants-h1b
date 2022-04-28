@@ -34,8 +34,6 @@ We collected the annual data from 2019 to 2021 and combined three datasets. Base
 
 We collected annual LCA data from 2019 to 2021 and combined three datasets into one. To generate exploratory visualizations, we first pre-processed the data by filtering the data by visa type and only keeping H-1B visa applications. Second, we removed the columns that we will not be not using in the prediction model. There are 13 columns in our final dataset (See the below table). Finally, we removed all rows which include missing values (NA) to have the complete data for model training, and it is feasible because there is only a small amount of data that contain NA. Our final data has 123,863 rows.
 
-### Data Visualization Dashboard
-
 ### Approval Probability Prediction Model
 To build our prediction model, we select the columns that are user-dependent. The columns included `EMPLOYER_NAME`, `WORKSITE_STATE`, `WAGE_OFFER_FROM`, `JOB_TITLE`, `COUNTRY_OF_CITIZENSHIP`, `FOREIGN_WORKER_EDUCATION`, `FOREIGN_WORKER_INFO_MAJOR`. 
 
@@ -47,6 +45,15 @@ We applied a random forest classifier to build our prediction model. Our depende
 
 ## Results
 ### Data Visualization Dashboard
+Linking back to our first goal of the project -- providing informational visualizations of H-1B visa applications that allow users to query H-1B applications based on (1) worksite locations, (2) job titles, (3) wages, (4) majors, we came up with four interesting questions to visualize them accordingly.
+
+In the first chart we visualized the number of distinct employers who have offered H-1B sponsorship in the past three years. Users can see that California has the most employers offering visa sponsorship, following by New York and Texas.
+
+Secondly, it was very interesting to drill down majors and job titles. Users can select the major they are interested in to see the top 10 job titles of this major. As an example, for computer science, we can see that top 10 job titles are pretty much software engineer or developers. And if we select Finance, we can see financial analysts and professors become the popular ones.
+
+Thirdly, the wage distribution for each state was displayed by a box plot. For example, Florida has its 25 and 75 percentile on 61K and 110K while Washington has a higher box position where its 25 and 75 percentile fall on 101K and 136K.
+
+Finally, the last chart we have shows the citizenship given a specific job title, which is very interesting to look at. We can see that software engineers come from almost all over world with most of which from India and China.
 
 ### Approval Probability Prediction Model
 
