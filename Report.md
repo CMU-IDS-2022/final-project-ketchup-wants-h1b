@@ -56,6 +56,8 @@ Below is the user interface of our prediction model. Users can select or type in
 
 Our random forest model yielded an accuracy of 88% on our test set. Below is the classification report generated from Scikit Learn.
 
+![prediction_model_summary](Figs/prediction_model_summary.png)
+
 
 ## Discussion
 According to the result of the paper published in 2018, the accuracy of their random forest regression model is 72%. Our new model has an accuracy of 88%. By adding some new variables, we successfully enhanced our model performance. Our users could be more confident about our application and get useful insight from our application.
