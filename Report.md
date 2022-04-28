@@ -22,7 +22,7 @@ We are interested in exploring the following questions:
 * Are we able to predict the probability of H-1B visa approvals based on historical data?
 
 ## Related Work
-The research paper "Prediction of H1B Visa Using Machine Learning Algorithms" by D. Swain, K. Chakraborty, A. Dombe, A. Ashture, and N. Valakunde estimated the likelihood of visa approval and clustered the data by using random forest, K-Means, and Logistic regression. The features that the paper included in the model are employer names, job title, visa petition year, Standard Occupational Classification code, wage, full-time position, and worksite. We wanted to refine the model by adding more related features such as country of citizenship, education level, and major.
+The research paper "Prediction of H1B Visa Using Machine Learning Algorithms" by D. Swain, K. Chakraborty, A. Dombe, A. Ashture, and N. Valakunde estimated the likelihood of visa approval and clustered the data by using random forest, K-Means, and Logistic regression. The features that the paper included in the model are `employer names`, `job title`, `visa petition year`, `Standard Occupational Classification code`, `wage`, `full-time position`, and `worksite`. We wanted to refine the model by adding more related features such as `country of citizenship`, `education level`, and `major`.
 
 ## Methods
 ### Data Collection and Preprocessing
