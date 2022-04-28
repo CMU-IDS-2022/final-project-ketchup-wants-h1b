@@ -38,8 +38,11 @@ We collected annual LCA data from 2019 to 2021 and combined three datasets into 
 
 ### Approval Probability Prediction Model
 To build our prediction model, we select the columns that are user-dependent. The columns included `EMPLOYER_NAME`, `WORKSITE_STATE`, `WAGE_OFFER_FROM`, `JOB_TITLE`, `COUNTRY_OF_CITIZENSHIP`, `FOREIGN_WORKER_EDUCATION`, `FOREIGN_WORKER_INFO_MAJOR`. 
+
 After reviewing all the unique values in `EMPLOYER_NAME`, `JOB_TITLE`, `COUNTRY_OF_CITIZENSHIP`, and `FOREIGN_WORKER_INFO_MAJOR`, we found that more than 15000 values in these columns only appeared in the whole dataset less than ten times. Since we will be doing one-hot encoding for these categorical variables, to reduce the computational complexity and time, we decided to filter out those data whose appearances are less than or equal to 10.
+
 In addition, the application dataset is an imbalanced dataset. After removing the low-appearance values, the number of certified data is 55578, while the number of denied data is only 1105. Therefore, we downsampled the certified data to a ratio of 5:1 to the denied data. Next, we used pandas built-in function pd.get_dummies() to apply one-hot encoding to all the categorical variables and then separated our data into training and testing sets with a ratio of 7:3.
+
 We applied a random forest classifier to build our prediction model. Our dependent variable is `CASE_STATUS_Certified`, which encodes certified data as 1 while denied data as 0.
 
 ## Results
