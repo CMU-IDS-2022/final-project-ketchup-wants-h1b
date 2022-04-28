@@ -34,6 +34,12 @@ We collected the annual data from 2019 to 2021 and combined three datasets. Base
 
 We collected annual LCA data from 2019 to 2021 and combined three datasets into one. To generate exploratory visualizations, we first pre-processed the data by filtering the data by visa type and only keeping H-1B visa applications. Second, we removed the columns that we will not be not using in the prediction model. There are 13 columns in our final dataset (See the below table). Finally, we removed all rows which include missing values (NA) to have the complete data for model training, and it is feasible because there is only a small amount of data that contain NA. Our final data has 123,863 rows.
 
+### Data Visualization Dashboard
+
+We provided four components in the visualization dashboard, which answered our proposed problems accordingly. On the left of the website is the sidebar where we put all the filters. Users can select each variable of their interest to explore the visualization.
+
+![dashboard](Figs/app_screenshot.png)
+
 ### Approval Probability Prediction Model
 To build our prediction model, we select the columns that are user-dependent. The columns included `EMPLOYER_NAME`, `WORKSITE_STATE`, `WAGE_OFFER_FROM`, `JOB_TITLE`, `COUNTRY_OF_CITIZENSHIP`, `FOREIGN_WORKER_EDUCATION`, `FOREIGN_WORKER_INFO_MAJOR`. 
 
