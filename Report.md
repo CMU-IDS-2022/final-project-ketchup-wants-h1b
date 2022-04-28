@@ -38,7 +38,7 @@ We collected annual LCA data from 2019 to 2021 and combined three datasets into 
 
 We provided four components in the visualization dashboard, which answered our proposed problems accordingly. On the left of the website is the sidebar where we put all the filters. Users can select each variable of their interest to explore the visualization.
 
-![dashboard](Figs/app_screenshot.png)
+![dashboard](Figs/app_summary_image.png)
 
 ### Approval Probability Prediction Model
 To build our prediction model, we select the columns that are user-dependent. The columns included `EMPLOYER_NAME`, `WORKSITE_STATE`, `WAGE_OFFER_FROM`, `JOB_TITLE`, `COUNTRY_OF_CITIZENSHIP`, `FOREIGN_WORKER_EDUCATION`, `FOREIGN_WORKER_INFO_MAJOR`. 
