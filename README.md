@@ -6,7 +6,7 @@
   * Kylie Hsieh (hanjuh@andrew.cmu.edu)
 * **Online URL**: https://share.streamlit.io/cmu-ids-2022/final-project-ketchup-wants-h1b/main/app.py
 
-![A screenshot of the application.](app_summary_image.png)
+![A screenshot of the application.](Figs/app_summary_image.png)
 
 ## Abstract
 
