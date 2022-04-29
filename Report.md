@@ -22,7 +22,7 @@ We are interested in exploring the following questions:
 * Are we able to predict the probability of H-1B visa approvals based on historical data?
 
 ## Related Work
-The research paper "Prediction of H1B Visa Using Machine Learning Algorithms" by D. Swain, K. Chakraborty, A. Dombe, A. Ashture, and N. Valakunde estimated the likelihood of visa approval and clustered the data by using random forest, K-Means, and Logistic regression. The features that the paper included in the model are `employer names`, `job title`, `visa petition year`, `Standard Occupational Classification code`, `wage`, `full-time position`, and `worksite`. We wanted to refine the model by adding more related features such as `country of citizenship`, `education level`, and `major`.
+A research paper "Prediction of H1B Visa Using Machine Learning Algorithms" by D. Swain, K. Chakraborty, A. Dombe, A. Ashture, and N. Valakunde estimated the likelihood of visa approval and clustered the data by using random forest, K-Means, and Logistic regression [1]. The features that the paper included in the model are `employer names`, `job title`, `visa petition year`, `Standard Occupational Classification code`, `wage`, `full-time position`, and `worksite`. We wanted to refine the model by adding more related features such as `country of citizenship`, `education level`, and `major`.
 
 ## Methods
 ### Data Collection and Preprocessing
@@ -77,3 +77,6 @@ According to the result of the paper published in 2018, the accuracy of their ra
 
 ## Future Work
 So far, we only included data from 2019 to 2021 due to time and computational load constraints. We would like to expand the range of our data to more years. Also, since there are no standard formats for applicants’ majors and job titles, there are many similar values that could possibly be combined together. For example, `software developer`, `software engineer`, `software development engineer` could be possibly categorized in the same job category. Moreover, the level of each job is also recorded in job titles, such as `Software engineer I`, `Software engineer II`, and `Software engineer III`, etc. If we could find out a way to standardize the job title and separate the level of each job, maybe we could gain a more accurate result.
+
+## References
+[1] Swain, D., Chakraborty, K., Dombe, A., Ashture, A., & Valakunde, N. (2018, December). [Prediction of H1B Visa Using Machine Learning Algorithms.](https://ieeexplore.ieee.org/abstract/document/8933628?casa_token=kw9Mm8Q-unoAAAAA:U80awNcdpk4JT3KkKXAomHdGDWywIcO4MUl-BGwBuJqJd5NhPpzb1DKgNTsfCzlQuONylqyIlg) In 2018 International Conference on Advanced Computation and Telecommunication (ICACAT) (pp. 1-7). IEEE.
